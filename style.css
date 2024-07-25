@@ -5,130 +5,145 @@
 }
 
 @font-face {
-  font-family: 'moderniz';
-  src: url(Moderniz.otf);
+  font-family: 'lemon';
+  src: url(LEMONMILK-Light.otf);
 }
 
-/*landing*/
+@font-face {
+  font-family: 'zain-light';
+  src: url(Zain-Light.ttf);
+}
+
+@font-face {
+  font-family: 'zain-bold';
+  src: url(Zain-Bold.ttf);
+}
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 0 -10px 0 0;
+  left: 0px;
+  right: 0px;
+  top: 0px;
 }
 
-.background-image{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+span{
+  padding-left: 20px;
+}
+
+.home-wrapper{
+  background-image: url(bar-inside-1.jpg);
   background-size: cover;
-  z-index: -1;
-}
-
-.img-container{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 100vh;
-}
-
-.nav-list{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
   width: 100%;
+  height: 650px;
+}
+
+nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 8px;
+  list-style-type: none;
+  font-size: 12px;
   line-height: 20px;
-  font-family: 'moderniz';
+  font-family: 'lemon';
   letter-spacing: 3px;
   color: rgb(245, 245, 245);
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
 nav li{
-  margin-inline: 20px;
+  display: inline-flex;
+  justify-content: space-between;
   list-style-type: none;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
-.hero #title-small {
-  display: block;
-  position: absolute;
+.hero-small{
+  display: flex;
   justify-content: center;
-  padding-left: 120px;
-  padding-top: 40px;
+  align-items: center;
+  margin-top: 150px;
   font-family: 'tempting';
-  font-size: 40px;
+  font-weight: 100;
+  font-size: 25px;
   letter-spacing: .3rem;
   color: rgb(245, 245, 245);
   white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  animation: linearwipe 1.6s steps(50, end) .3s 1 forwards, fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 5s, linearwipe ease-in;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-#title {
-  display: block;
-  position: absolute;
+.hero{
+  display: flex;
   justify-content: center;
-  padding-left: 170px;
-  padding-top: 130px;
+  align-items: center;
+  margin-bottom: 65px;
+  margin-top: auto;
   font-family: 'tempting';
+  font-weight: 100;
   font-size: 100px;
   letter-spacing: .3rem;
   color: rgb(245, 245, 245);
   white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  animation: linearwipe 1.6s steps(50, end) .3s 1 forwards, fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 5s, linearwipe ease-in;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.address{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 13px;
+  letter-spacing: .2rem;
+  line-height: 20px;
+  font-family: 'zain-light';
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.address p{
+  text-align: justify;
+  text-align-last: justify;
 }
 
 .social-icons {
   display: flex;
-  position: absolute;
-  
-  padding-left: 400px;
-  padding-top: 405px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 45px;
   font-size: 30px;
   color: rgb(245, 245, 245);
-  white-space: nowrap;
-  overflow: hidden;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
-.address-container {
-  display: flex;
-  justify-content: flex-end;
-  text-align: justify;
-  position: absolute;
-  font-size: 8px;
-  line-height: 20px;
-  font-family: 'moderniz';
-  letter-spacing: 3px;
-  color: rgb(245, 245, 245);
-  white-space: nowrap;
-  overflow: hidden;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.social-icons i{
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 a{
@@ -136,8 +151,142 @@ a{
   text-decoration: none;
 }
 
-span{
-  display: inline-block;
+a:hover{
+  opacity: .7;
+}
+
+a p:hover{
+  opacity: .7;
+}
+
+/*page break*/
+
+.menu-wrapper{
+  width: 100$;
+  background-color: brown;
+}
+
+.menu{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu h1, .menu h2{
+  height: 100px;
+}
+
+.menu .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+  font-size: 40px;
+  letter-spacing: .2rem;
+  line-height: 22px;
+  font-weight: 100;
+  color: rgb(245, 245, 245);
+  font-family: 'tempting';
+  white-space: nowrap;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+ul{
+  margin-top: 20px;
+  padding-inline-start: 0px;
+
+}
+
+.menu .item{
+  padding: 10px;
+}
+
+.name{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: rgb(245, 245, 245);
+  font-family: 'lemon';
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -10px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: rgb(245, 245, 245);
+  font-family: 'zain-light';
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.price {
+  display: flex;
+  position: relative;
+  padding-left: 25px;
+  font-size: 12px;
+  color: rgb(245, 245, 245);
+  font-family: 'zain-bold';
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.menu:nth-child(3){
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#drafts{
+  flex: 1;
+  width: 50%;
+}
+
+#bottles-and-cans{
+  width: 50%;
+}
+
+.text{
+  display: flex;
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+  color: rgb(245, 245, 245);
+  font-family: 'zain-light';
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+/*page break*/
+
+.events-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bar-closeup-edit.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 650px;
 }
 
 @keyframes linearwipe { 
@@ -148,14 +297,10 @@ span{
   0% {
       opacity: 0;
   }
-  15% {
+  10% {
     opacity: 0;
 }
   100% {
       opacity: 1;
   }
 }
-
-/*landing end*/
-
-
