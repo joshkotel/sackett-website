@@ -1,49 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menu</title>
-    <link href="style.css" rel="stylesheet"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  /> 
   </head>
-  <body>
-      <main>
-        <h1 class="logosmall">On the</h1>
-        <h1 class="logo">Menu</h1>
-        <section class="menu">
-          <h2 class="heading">Cocktails</h2>
-          <article class="item">
-            <p class="cocktails">Ornette</p><p class="price">13</p>
-          </article>
-          <article class="item">
-            <p class="cocktails">Paloma</p><p class="price">13</p>
-          </article>
-          <article class="item">
-            <p class="cocktails">Mezcal Negroni</p><p class="price">13</p>
-          </article>
-          <article class="item">
-            <p class="cocktails">Summer Sipper</p><p class="price">13</p>
-          </article>
-          <article class="item">
-            <p class="cocktails">Rye Fashioned</p><p class="price">13</p>
-          </article>
-        </section>
-        <section>
-          <br>
-          <h2 class="heading">Bites</h2>
-          <article class="item">
-            <p class="bites">Soft Pretzel</p><p class="price">4</p>
-          </article>
-          <article class="item">
-            <p class="bites">Wasabi Peas</p><p class="price">3</p>
-          </article>
-          <article class="item">
-            <p class="bites">Mixed Nuts</p><p class="price">3</p>
-          </article>
-          <article class="item">
-            <p class="bites">Chips</p><p class="price">2</p>
-          </article>
-        </section>
-      </main>
+
+  <body class="menu-page">
+ 
+    <section class="header-wrapper">
+
+      <div class="header-wrapper-container">
+
+        <div class="logo-container">
+          <a href="index.html" class="unstyled-link">
+            <h2 class="logo-small">The</h2>
+            <h1 class="logo">Sackett</h1>
+          </a>
+        </div>
+
+      <label class="hamburger-menu">
+        <input type="checkbox">
+      </label>
+      <aside class="sidebar">
+
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+          </ul>
+        </nav>
+      </aside>
+        
+        <nav class="nav-list">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </section>
+
+    <section class="menu-wrapper" id="menu">
+
+      <div class="menu" id="cocktails">
+
+        <h2 class="heading">Cocktails</h2>
+        <hr>
+
+          <ul>
+
+            <article class="item">
+              <p class="name">Mezcal Negroni</p>
+                <p class="description">mezcal • sweet vermouth • campari
+                  <span class="price">14</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Ornette</p>
+                <p class="description">rye • orgeat • lemon • angostura bitters
+                  <span class="price">13</span>
+                </p>
+            </article>
+
+            <article class="item">
+              <p class="name">Orange Spritz</p>
+                <p class="description">vodka • aperol • orange • club soda
+                  <span class="price">14</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Paloma</p>
+                <p class="description">tequila • grapefruit • lime • campari splash
+                  <span class="price">13</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Palmetto</p>
+                <p class="description">dark rum • sweet vermouth • orange bitters
+                  <span class="price">12</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Slow Loris</p>
+                <p class="description">sloe gin • lemon • club soda
+                  <span class="price">12</span>
+                </p>
+            </article>
+        
+          </ul>
+        
+      </div>
+
+      <div class="menu" id="bites">
+        
+        <h2 class="heading">Bites</h2>
+        <hr>
+        
+          <ul>
+            
+            <article class="item" >
+              <p class="name">Soft Pretzel</p>
+                <p class="description">served with guldens mustard
+                  <span class="price">4</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Wasabi Peas</p>
+                <p class="description">&nbsp;&nbsp;&nbsp;spicy&nbsp;<i class='fas fa-pepper-hot'></i>
+                  <span class="price">3</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Mixed Nuts</p>
+                <p class="description">&nbsp;&nbsp;salted
+                  <span class="price">3</span>
+                </p>
+            </article>
+            
+            <article class="item">
+              <p class="name">Chips</p>
+                <p class="description">assorted flavors, kettle brand
+                  <span class="price">2</span>
+                </p>
+            </article>
+
+          </ul>
+      
+      </div>
+
+      <div class="menu" id="beer">
+
+        <div class="drafts" id="drafts">
+          <h2 class="heading" >Drafts</h2>
+          <hr>
+
+            <article class="item" id="draft-beer">
+              <p class="name">IPA</p>
+                <p class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rotating
+                  <span class="price">8</span>
+                </p>
+              <p class="name">Pilsner</p>
+                <p class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rotating
+                  <span class="price">8</span>
+                </p>
+              <p class="name">Seasonal</p>
+                <p class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rotating
+                  <span class="price">8</span>
+                </p>
+            </article>
+        </div>
+
+        <div class="bottles-and-cans" id="bottles-and-cans">
+          <h2 class="heading" >Bottles & Cans</h2>
+          <hr>
+
+            <article class="item">
+              <p class="name">Beers Ciders & Sours</p>
+                <p class="description">over 25 varieties, staple and seasonal
+                  <span class="price">4 ~ 8</span>
+                </p>
+            </article>
+
+            <article class="item">
+              <p class="name">Beer + Shot Special</p>
+                <p class="description">high life or rolling rock, well shot
+                  <span class="price">7</span>
+                </p>
+            </article>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="footer-wrapper" id="footer">
+
+      <section class="footer-text">
+
+        <div class="logo-container">
+          <h2 class="logo-small">The</h2>
+          <h1 class="logo">Sackett</h1>
+        </div>
+
+        <a href="https://www.google.com/maps/place/The+Sackett/@40.6779845,-73.9821911,15z/data=!4m6!3m5!1s0x89c25baad0ce639f:0x10feaedd150807d4!8m2!3d40.6779845!4d-73.9821911!16s%2Fg%2F1tg51bl6?entry=ttu" target="_blank" class="address">
+          <p>661 Sackett St<br>Brooklyn, NY
+          </p>
+          </a>
+
+        <div class="hours">
+          <p class="item">SUN - THU <span class="hours-bold">4pm - 12am</span></p>
+          <p class="item">FRI - SAT <span class="hours-bold">4pm - 2am</span></p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/sackettbar7892" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          &nbsp;
+          <a href="https://x.com/thesackettny" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          &nbsp;
+          <a href=callto:718-622-0437” class="phone">
+            <i class="fa fa-phone fa-sm"></i>
+          </a>
+
+        </div>
+    
+      </section>
+    </footer>
+
+
   <body>   
 </html>
