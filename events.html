@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>The Sackett Private Events</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   /> 
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body class="about-page">
@@ -16,26 +18,29 @@
       <div class="header-wrapper-container">
 
         <div class="logo-container">
-          <a href="index.html" class="unstyled-link">
+          <a href="index.html">
             <h2 class="logo-small">The</h2>
             <h1 class="logo">Sackett</h1>
           </a>
         </div>
 
-      <label class="hamburger-menu">
-        <input type="checkbox">
-      </label>
-      <aside class="sidebar">
-
-        <nav class="hamburger-nav">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-          </ul>
-        </nav>
-      </aside>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" id="toggler" onclick="noScroll()">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a> </a></li><li><a> </a></li><li><a> </a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <nav class="nav-list">
           <ul>
@@ -71,9 +76,11 @@
       <section class="footer-text">
 
         <div class="logo-container">
-          <h2 class="logo-small">The</h2>
-          <h1 class="logo">Sackett</h1>
-        </div>
+            <a href="index.html">
+              <h2 class="logo-small">The</h2>
+              <h1 class="logo">Sackett</h1>
+            </a>
+          </div>
 
         <a href="https://www.google.com/maps/place/The+Sackett/@40.6779845,-73.9821911,15z/data=!4m6!3m5!1s0x89c25baad0ce639f:0x10feaedd150807d4!8m2!3d40.6779845!4d-73.9821911!16s%2Fg%2F1tg51bl6?entry=ttu" target="_blank" class="address">
           <p>661 Sackett St<br>Brooklyn, NY
@@ -94,7 +101,7 @@
             <i class="fab fa-twitter"></i>
           </a>
           &nbsp;
-          <a href=callto:7186220437” class="phone">
+          <a href=tel:718-622-0437” alt="Call 718-622-0437" class="phone">
             <i class="fa fa-phone fa-sm"></i>
           </a>
         </div>

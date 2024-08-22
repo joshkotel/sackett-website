@@ -3,31 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sackett Landing Page</title>
+    <title>The Sackett</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
-    <link src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></link> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body>
   
     <section class="home-wrapper" id="home">
-
-      <label class="hamburger-menu">
-        <input type="checkbox">
-      </label>
-      <aside class="sidebar">
-
-        <nav class="hamburger-nav">
-          <ul>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-          </ul>
-        </nav>
-      </aside>
-      
+<!--
+      <div class="logo-container" id="index-logo">
+        <a href="index.html">
+          <h2 class="logo-small">The</h2>
+          <h1 class="logo">Sackett</h1>
+        </a>
+      </div>
+-->    
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" id="toggler" onclick="noScroll()"; onclick="showDiv()">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#home" onclick="uncheck()">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="#about" onclick="uncheck()">ABOUT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
       <nav class="nav-list">
         <ul>
           <li><a href="menu.html">MENU</a></li>
@@ -58,7 +68,7 @@
           <hr class="hr-short"><hr>
           <h3>A Bit About Us...</h3>
           <p>Our history begins in 2008, with a simple mission to provide a cozy local pub to unwind for a while while enjoying a great drink, and connecting with friends.
-          <p>You can also join us for trivia every Tuesday at 8pm – no cover charge and always free to play! Stay tuned to our <a href="https://x.com/thesackettny">socials</a> for updates on upcoming trivia, themed nights, and special happenings.</p>
+          <p>You can also join us for trivia every Tuesday at 8pm – no cover charge and always free to play! Stay tuned to our <a href="https://x.com/thesackettny" target="_blank">socials</a> for updates on upcoming trivia, themed nights, and special happenings.</p>
           <p>Our happy hour is every day <span id="bold-text">4pm - 7pm</span></p>
           <br>
           <p>-&nbsp;Cheers!&nbsp;-</p>
@@ -75,8 +85,10 @@
         <section class="footer-text">
 
           <div class="logo-container">
-            <h2 class="logo-small">The</h2>
-            <h1 class="logo">Sackett</h1>
+            <a href="index.html">
+              <h2 class="logo-small">The</h2>
+              <h1 class="logo">Sackett</h1>
+            </a>
           </div>
 
           <a href="https://www.google.com/maps/place/The+Sackett/@40.6779845,-73.9821911,15z/data=!4m6!3m5!1s0x89c25baad0ce639f:0x10feaedd150807d4!8m2!3d40.6779845!4d-73.9821911!16s%2Fg%2F1tg51bl6?entry=ttu" target="_blank" class="address">
@@ -98,7 +110,7 @@
               <i class="fab fa-twitter"></i>
             </a>
             &nbsp;
-            <a href=callto:7186220437” class="phone">
+            <a href=tel:718-622-0437” alt="Call 718-622-0437" class="phone">
               <i class="fa fa-phone fa-sm"></i>
             </a>
           </div>
@@ -106,15 +118,6 @@
         </section>
     
       </footer>
-<!-- 
-    <section class="events-wrapper" id="events">
-      
-      <div class="contact">
-        <p class="info">The Sackett is available for private events, available for up to 45 guests.
-        <p class="text">Write us at&nbsp;<a href="mailto:info@thesackett.com"> info@thesackett.com </a> </p>
-      </div>
-  
-    </section> -->
 
   </body> 
 </html>
