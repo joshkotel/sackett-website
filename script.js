@@ -1,15 +1,27 @@
-function openNav() {
-  document.getElementById(".hamburger-nav").style.display = "block";
+function noScroll() { 
+  let toggleButton = document.getElementById("toggler");
+  if (toggleButton.checked) {
+    toggleButton.checked = true; document.body.classList.add('no-scroll')
+  } else {
+    toggleButton.checked = false; document.body.classList.remove('no-scroll')
+  }
+} 
+
+function uncheck() {
+  let toggleButton = document.getElementById("toggler");
+  if (toggleButton.checked) {
+    toggleButton.checked = false; document.body.classList.remove('no-scroll')
+  } else {
+    toggleButton.checked = true;
+  }
 }
 
-function closeNav() {
-  document.getElementById(".hamburger-nav").style.display = "none";
+function showDiv() {
+  var htmlShow = document.getElementById("index-logo");
+  if (htmlShow.style.display === "none") {
+    htmlShow.style.display = "visible";
+  } else {
+    htmlShow.style.display = "none";
+  }
 }
 
-$('.hamburger-menu:has(input:checked)').on('click', function(){
-  $('body').addClass('no-scroll');
-});
-
-$('').on('click', function(){
-  $('body').removeClass('no-scroll');
-});
